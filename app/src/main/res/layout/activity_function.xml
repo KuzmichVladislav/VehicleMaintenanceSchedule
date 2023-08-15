@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TextView для отображения марки автомобиля -->
+    <TextView
+        android:id="@+id/brandTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center" />
+
+    <!-- TextView для отображения модели автомобиля -->
+    <TextView
+        android:id="@+id/modelTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textAlignment="center" />
+
+    <!-- EditText для ввода текущего пробега автомобиля -->
+    <EditText
+        android:id="@+id/mileageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mileage_edit_text_hint"
+        android:inputType="number" />
+
+    <!-- Button для выполнения расчета следующего ТО -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_button_text"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- TextView для отображения результата расчета следующего ТО -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="4dp"
+
+    app:cardPreventCornerOverlap="false"
+
+    app:cardUseCompatPadding="true"
+
+    app:contentPadding="8dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <!-- TextView для отображения марки автомобиля -->
+        <TextView
+            android:id="@+id/brandTextView"
+
+            style="@style/TextAppearance.AppCompat.Medium"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:textAlignment="center"
+
+            android:textColor="@color/black"
+
+            app:autoSizeMaxTextSize="20sp"
+
+            app:autoSizeMinTextSize="12sp"
+
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+
+            app:autoSizeStepGranularity="2sp"
+
+            app:autoSizeTextType="uniform" />
+
+        <!-- TextView для отображения модели автомобиля -->
+        <TextView
+            android:id="@+id/modelTextView"
+
+            style="@style/TextAppearance.AppCompat.Medium"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:textAlignment="center"
+
+            android:textColor="@color/black"
+
+            app:autoSizeMaxTextSize="20sp"
+
+            app:autoSizeMinTextSize="12sp"
+
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+
+            app:autoSizeStepGranularity="2sp"
+
+            app:autoSizeTextType="uniform" />
+
+        <!-- TextView для отображения пробега автомобиля -->
+        <TextView
+            android:id="@+id/mileageTextView"
+
+            style="@style/TextAppearance.AppCompat.Medium"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:textAlignment="center"
+
+            android:textColor="@color/black"
+
+            app:autoSizeMaxTextSize="20sp"
+
+            app:autoSizeMinTextSize="12sp"
+
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+
+            app:autoSizeStepGranularity="2sp"
+
+            app:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

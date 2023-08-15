@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Создаем новую тему FullScreenTheme, которая наследуется от Theme.AppCompat.Light.NoActionBar -->
+    <style name="FullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Устанавливаем фоновый цвет для окна -->
+        <item name="android:windowBackground">@color/white</item>
+        <!-- Устанавливаем полноэкранный режим для окна -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>
